@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.startBtn:{
-                Toast.makeText(this, "Hellow", Toast.LENGTH_LONG).show();
+                //Toast.makeText(this, "Hellow", Toast.LENGTH_LONG).show();
                 startService(new Intent(this, MyMusicService.class));
                 break;
             }
