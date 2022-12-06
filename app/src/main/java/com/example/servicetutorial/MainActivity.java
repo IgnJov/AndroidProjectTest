@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button startBtn, stopBtn, nextPageBtn;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.startBtn:{
+                Toast.makeText(this, "Hellow", Toast.LENGTH_LONG).show();
                 startService(new Intent(this, MyMusicService.class));
                 break;
             }
