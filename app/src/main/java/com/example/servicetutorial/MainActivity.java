@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.startBtn:{
                 //Toast.makeText(this, "Hellow", Toast.LENGTH_LONG).show();
+                //tes komit
                 startService(new Intent(this, MyMusicService.class));
                 break;
             }
